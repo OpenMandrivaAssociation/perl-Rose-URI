@@ -3,7 +3,7 @@
 
 %define version	0.021
 
-%define	rel	2
+%define	rel	3
 %define release	%mkrel %{rel}
 
 Summary:	An alternative to URI
