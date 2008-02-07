@@ -1,9 +1,9 @@
 %define module	Rose-URI
 %define	modprefix Rose
 
-%define version	0.021
+%define version	0.022
 
-%define	rel	3
+%define	rel	1
 %define release	%mkrel %{rel}
 
 Summary:	An alternative to URI
