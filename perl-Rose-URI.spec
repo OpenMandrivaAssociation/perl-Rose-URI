@@ -1,7 +1,7 @@
 %define module	Rose-URI
 %define	modprefix Rose
 
-%define version	0.022
+%define version	0.50
 
 %define	rel	1
 %define release	%mkrel %{rel}
