@@ -1,15 +1,13 @@
 %define upstream_name	 Rose-URI
-%define upstream_version 1.00
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	1.00
+Release:	5
 
 Summary:	An alternative to URI
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Rose/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Rose/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ Rose::URI is a standalone URI class allowing easy and efficient
 manipulation of query parameters and other URI components.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -53,9 +51,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.500.0-1mdv2010.0
 + Revision: 406381
-- rebuild using %%perl_convert_version
-
-* Sun Jan 25 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.50-1mdv2009.1
+- rebuild using %1.00 Sun Jan 25 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.50-1mdv2009.1
 + Revision: 333412
 - update to new version 0.50
 
